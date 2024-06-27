@@ -50,6 +50,11 @@ const loadModel = (sequelize, DataTypes) => {
     phone: DataTypes.STRING,
     logo: DataTypes.STRING,
     heroImage: DataTypes.STRING,
+    percentage: {
+      allowNull: false,
+      type: DataTypes.DOUBLE,
+      defaultValue: 0.0
+    },
     status: {
       type: DataTypes.ENUM,
       values: [
